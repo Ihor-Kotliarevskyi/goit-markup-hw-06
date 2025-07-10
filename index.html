@@ -54,10 +54,15 @@
             </li>
           </ul>
         </address>
+        <button class="button-burger" type="button">
+          <svg class="icon-burger" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
-      <section class="hero section">
+      <section class="hero section" hidden>
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button" data-modal-open>
@@ -65,7 +70,7 @@
           </button>
         </div>
       </section>
-      <section class="benefits section">
+      <section class="benefits section hidden">
         <div class="container">
           <h2 class="benefits-title visually-hidden">Title</h2>
           <ul class="benefits-list">
@@ -120,7 +125,7 @@
           </ul>
         </div>
       </section>
-      <section id="team" class="team section">
+      <section id="team" class="team section hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -323,7 +328,7 @@
           </ul>
         </div>
       </section>
-      <section id="portfolio" class="portfolio section">
+      <section id="portfolio" class="portfolio section hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -446,7 +451,7 @@
         </div>
       </section>
     </main>
-    <footer id="bottom" class="footer">
+    <footer id="bottom" class="footer hidden">
       <div class="container">
         <div class="footer-logo-container">
           <a href="./index.html" class="footer-logo"
@@ -517,7 +522,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay" data-modal>
+    <div class="modal-overlay hidden" data-modal>
       <div class="modal">
         <button class="modal-button-close" type="button" data-modal-close>
           <svg class="modal-button-close-icon" width="8" height="8">
@@ -602,7 +607,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <div class="modal-overlay-menu">
+    <div class="modal-overlay-menu hidden">
       <div class="modal-menu-mobile">
         <button class="menu-mobile-button-close" type="button">
           <svg class="menu-mobile-button-close-icon">
