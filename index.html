@@ -54,15 +54,19 @@
             </li>
           </ul>
         </address>
-        <button class="button-burger" type="button">
+        <button class="button-burger" type="button" data-menu-open>
           <svg class="icon-burger" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu is-open">
+      <div class="mobile-menu" data-menu>
         <div class="mobile-menu-container container">
-          <button class="mobile-menu-button-close" type="button">
+          <button
+            class="mobile-menu-button-close"
+            type="button"
+            data-menu-close
+          >
             <svg class="mobile-menu-button-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -83,70 +87,54 @@
           <address class="mobile-menu-address">
             <ul class="mobile-menu-address-list">
               <li class="mobile-menu-address-list-item">
+                <a href="tel:+110001111111" class="mobile-menu-address-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-address-list-item">
                 <a
                   href="mailto:info@devstudio.com"
                   class="mobile-menu-address-link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="mobile-menu-address-list-item">
-                <a href="tel:+110001111111" class="mobile-menu-address-link"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
             </ul>
           </address>
           <div class="mobile-menu-social-container">
-            <ul class="mobile-menu-list-social-container">
-              <li class="mobile-menu-list-social-item">
+            <ul class="mobile-menu-social-list">
+              <li class="mobile-menu-social-list-item">
                 <a
-                  class="mobile-menu-list-social-link"
+                  class="mobile-menu-social-link"
                   href="https://www.instagram.com"
                 >
-                  <svg
-                    class="mobile-menu-list-social-icon"
-                    width="24"
-                    height="24"
-                  >
+                  <svg class="mobile-menu-social-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="mobile-menu-list-social-item">
-                <a class="mobile-menu-list-social-link" href="https://x.com">
-                  <svg
-                    class="mobile-menu-list-social-icon"
-                    width="24"
-                    height="24"
-                  >
+              <li class="mobile-menu-social-list-item">
+                <a class="mobile-menu-social-link" href="https://x.com">
+                  <svg class="mobile-menu-social-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="mobile-menu-list-social-item">
+              <li class="mobile-menu-social-list-item">
                 <a
-                  class="mobile-menu-list-social-link"
+                  class="mobile-menu-social-link"
                   href="https://www.facebook.com"
                 >
-                  <svg
-                    class="mobile-menu-list-social-icon"
-                    width="24"
-                    height="24"
-                  >
+                  <svg class="mobile-menu-social-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="mobile-menu-list-social-item">
+              <li class="mobile-menu-social-list-item">
                 <a
-                  class="mobile-menu-list-social-link"
+                  class="mobile-menu-social-link"
                   href="https://ua.linkedin.com"
                 >
-                  <svg
-                    class="mobile-menu-list-social-icon"
-                    width="24"
-                    height="24"
-                  >
+                  <svg class="mobile-menu-social-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -157,7 +145,7 @@
       </div>
     </header>
     <main>
-      <section class="hero section" hidden>
+      <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button" data-modal-open>
@@ -165,7 +153,7 @@
           </button>
         </div>
       </section>
-      <section class="benefits section hidden">
+      <section class="benefits section">
         <div class="container">
           <h2 class="benefits-title visually-hidden">Title</h2>
           <ul class="benefits-list">
@@ -702,5 +690,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
