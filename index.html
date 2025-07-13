@@ -208,12 +208,16 @@
           </ul>
         </div>
       </section>
-      <section id="team" class="team section hidden">
+      <section id="team" class="team section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/mark-guerrero.jpg    1x,
+                  ./images/mark-guerrero@2x.jpg 2x
+                "
                 src="./images/mark-guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -263,7 +267,12 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/tom-ford.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="./images/tom-ford.jpg 1x, ./images/tom-ford@2x.jpg 2x"
+                src="./images/tom-ford.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="team-list-item-container">
                 <h3 class="team-list-title">Tom Ford</h3>
                 <p class="team-list-descr">Frontend Developer</p>
@@ -310,6 +319,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/camila-garcia.jpg    1x,
+                  ./images/camila-garcia@2x.jpg 2x
+                "
                 src="./images/camila-garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -360,6 +373,10 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="
+                  ./images/daniel-wilson.jpg    1x,
+                  ./images/daniel-wilson@2x.jpg 2x
+                "
                 src="./images/daniel-wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -411,14 +428,17 @@
           </ul>
         </div>
       </section>
-      <section id="portfolio" class="portfolio section hidden">
+      <section id="portfolio" class="portfolio section">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <div class="portfolio-overlay-img">
                 <img
-                  class="portfolio-list-img"
+                  srcset="
+                    ./images/portfolio/portfolio-1.jpg    1x,
+                    ./images/portfolio/portfolio-1@2x.jpg 2x
+                  "
                   src="./images/portfolio/portfolio-1.jpg"
                   alt="Banking App"
                   width="360"
@@ -432,12 +452,16 @@
               </div>
               <div class="portfolio-container">
                 <h3 class="portfolio-list-title">Banking App</h3>
-                <p class="list-descr">App</p>
+                <p class="portfolio-list-descr">App</p>
               </div>
             </li>
             <li class="portfolio-list-item">
               <div class="portfolio-overlay-img">
                 <img
+                  srcset="
+                    ./images/portfolio/portfolio-2.jpg    1x,
+                    ./images/portfolio/portfolio-2@2x.jpg 2x
+                  "
                   src="./images/portfolio/portfolio-2.jpg"
                   alt="Phone payment"
                   width="360"
@@ -451,12 +475,16 @@
               </div>
               <div class="portfolio-container">
                 <h3 class="portfolio-list-title">Cashless Payment</h3>
-                <p class="list-descr">Marketing</p>
+                <p class="portfolio-list-descr">Marketing</p>
               </div>
             </li>
             <li class="portfolio-list-item">
               <div class="portfolio-overlay-img">
                 <img
+                  srcset="
+                    ./images/portfolio/portfolio-3.jpg    1x,
+                    ./images/portfolio/portfolio-3@2x.jpg 2x
+                  "
                   src="./images/portfolio/portfolio-3.jpg"
                   alt="Laptop and Phone"
                   width="360"
@@ -470,12 +498,16 @@
               </div>
               <div class="portfolio-container">
                 <h3 class="portfolio-list-title">Meditation App</h3>
-                <p class="list-descr">App</p>
+                <p class="portfolio-list-descr">App</p>
               </div>
             </li>
             <li class="portfolio-list-item">
               <div class="portfolio-overlay-img">
                 <img
+                  srcset="
+                    ./images/portfolio/portfolio-4.jpg    1x,
+                    ./images/portfolio/portfolio-4@2x.jpg 2x
+                  "
                   src="./images/portfolio/portfolio-4.jpg"
                   alt="Car's helm"
                   width="360"
@@ -489,12 +521,16 @@
               </div>
               <div class="portfolio-container">
                 <h3 class="portfolio-list-title">Taxi Service</h3>
-                <p class="list-descr">Marketing</p>
+                <p class="portfolio-list-descr">Marketing</p>
               </div>
             </li>
             <li class="portfolio-list-item">
               <div class="portfolio-overlay-img">
                 <img
+                  srcset="
+                    ./images/portfolio/portfolio-5.jpg    1x,
+                    ./images/portfolio/portfolio-5@2x.jpg 2x
+                  "
                   src="./images/portfolio/portfolio-5.jpg"
                   alt="Phone with wallpappers"
                   width="360"
@@ -508,12 +544,16 @@
               </div>
               <div class="portfolio-container">
                 <h3 class="portfolio-list-title">Screen Illustrations</h3>
-                <p class="list-descr">Design</p>
+                <p class="portfolio-list-descr">Design</p>
               </div>
             </li>
             <li class="portfolio-list-item">
               <div class="portfolio-overlay-img">
                 <img
+                  srcset="
+                    ./images/portfolio/portfolio-6.jpg    1x,
+                    ./images/portfolio/portfolio-6@2x.jpg 2x
+                  "
                   src="./images/portfolio/portfolio-6.jpg"
                   alt="Girl with phone"
                   width="360"
@@ -527,20 +567,20 @@
               </div>
               <div class="portfolio-container">
                 <h3 class="portfolio-list-title">Online Courses</h3>
-                <p class="list-descr">Marketing</p>
+                <p class="portfolio-list-descr">Marketing</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer id="bottom" class="footer hidden">
+    <footer id="bottom" class="footer">
       <div class="container">
         <div class="footer-logo-container">
           <a href="./index.html" class="footer-logo"
             >Web<span class="span-bottom">Studio</span></a
           >
-          <p class="footer-descr">
+          <p class="footer-logo-descr">
             Increase the flow of customers and <br />sales for your business
             with digital <br />marketing & growth solutions.
           </p>
